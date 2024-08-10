@@ -22,10 +22,38 @@ a{
 .btn{
   background: #fff;
   color: #212121;
-  padding: 14px 25px;
+  padding: 10px 18px;
   font-size: 16px;
   border-radius: 30px;
   cursor: pointer;
   border: 0;
   outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn img{
+  width: 30px;
+  margin-left: 10px;
+}
+.btn.dark-btn{
+  background: #212EA0;
+  color: #fff
+}
+.dark-btn img{
+  width: 20px;
+  height: 15px;
+}
+
+/* ----- media query ----------- */
+
+
+@media (max-width: 1200px){
+    .container{
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    .btn{
+      padding: 14px 18px;
+    }
 }
